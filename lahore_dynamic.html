@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_fb31256c04cda82b22206f5614362112 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_fb31256c04cda82b22206f5614362112" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_fb31256c04cda82b22206f5614362112 = L.map(
+                "map_fb31256c04cda82b22206f5614362112",
+                {
+                    center: [31.52, 74.33],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 11,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_83109dbb2ceeea608ecddc429642e6cc = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_83109dbb2ceeea608ecddc429642e6cc.addTo(map_fb31256c04cda82b22206f5614362112);
+        
+    
+            var poly_line_e8e0cbf9a5f1888d2b8fde0b52ff3c77 = L.polyline(
+                [[31.5204, 74.3487], [31.5774, 74.33]],
+                {"bubblingMouseEvents": true, "color": "lightgray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "lightgray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_fb31256c04cda82b22206f5614362112);
+        
+    
+            poly_line_e8e0cbf9a5f1888d2b8fde0b52ff3c77.bindTooltip(
+                `<div>
+                     Gulberg-Lahore_Station: 8 km
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_0b618dc0a6a29f9b7184c57309517a00 = L.polyline(
+                [[31.5204, 74.3487], [31.5124, 74.3438]],
+                {"bubblingMouseEvents": true, "color": "lightgray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "lightgray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_fb31256c04cda82b22206f5614362112);
+        
+    
+            poly_line_0b618dc0a6a29f9b7184c57309517a00.bindTooltip(
+                `<div>
+                     Gulberg-Liberty_Market: 3 km
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_6e9f09111371e7a638c3440a0540f4bb = L.polyline(
+                [[31.4697, 74.4101], [31.5204, 74.3487]],
+                {"bubblingMouseEvents": true, "color": "lightgray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "lightgray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_fb31256c04cda82b22206f5614362112);
+        
+    
+            poly_line_6e9f09111371e7a638c3440a0540f4bb.bindTooltip(
+                `<div>
+                     DHA-Gulberg: 6 km
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_01aeaed03c775ffbdcdd0b0ba7f5bd60 = L.polyline(
+                [[31.4697, 74.4101], [31.4675, 74.2655]],
+                {"bubblingMouseEvents": true, "color": "lightgray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "lightgray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_fb31256c04cda82b22206f5614362112);
+        
+    
+            poly_line_01aeaed03c775ffbdcdd0b0ba7f5bd60.bindTooltip(
+                `<div>
+                     DHA-Emporium_Mall: 9 km
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_ba1edfa7a7c7fe78b0d31290234d7efe = L.polyline(
+                [[31.579, 74.315], [31.5774, 74.33]],
+                {"bubblingMouseEvents": true, "color": "lightgray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "lightgray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_fb31256c04cda82b22206f5614362112);
+        
+    
+            poly_line_ba1edfa7a7c7fe78b0d31290234d7efe.bindTooltip(
+                `<div>
+                     Data_Darbar-Lahore_Station: 5 km
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_98ffee3cb1e8a4bdc052b7520dc98137 = L.polyline(
+                [[31.579, 74.315], [31.5826, 74.325]],
+                {"bubblingMouseEvents": true, "color": "lightgray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "lightgray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_fb31256c04cda82b22206f5614362112);
+        
+    
+            poly_line_98ffee3cb1e8a4bdc052b7520dc98137.bindTooltip(
+                `<div>
+                     Data_Darbar-Walled_City: 2 km
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_cc32e82787bdc368c2abe9c972019420 = L.polyline(
+                [[31.5216, 74.4036], [31.5774, 74.33]],
+                {"bubblingMouseEvents": true, "color": "lightgray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "lightgray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_fb31256c04cda82b22206f5614362112);
+        
+    
+            poly_line_cc32e82787bdc368c2abe9c972019420.bindTooltip(
+                `<div>
+                     Allama_Iqbal_Airport-Lahore_Station: 15 km
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_d0141754ae183993b6681ae83619c707 = L.polyline(
+                [[31.5882, 74.3103], [31.579, 74.315]],
+                {"bubblingMouseEvents": true, "color": "lightgray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "lightgray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_fb31256c04cda82b22206f5614362112);
+        
+    
+            poly_line_d0141754ae183993b6681ae83619c707.bindTooltip(
+                `<div>
+                     Badshahi_Mosque-Data_Darbar: 4 km
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_c2654e500a4ead26ed85a96a202a4641 = L.polyline(
+                [[31.5882, 74.3103], [31.5826, 74.325]],
+                {"bubblingMouseEvents": true, "color": "lightgray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "lightgray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_fb31256c04cda82b22206f5614362112);
+        
+    
+            poly_line_c2654e500a4ead26ed85a96a202a4641.bindTooltip(
+                `<div>
+                     Badshahi_Mosque-Walled_City: 1 km
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_a04e529a3e82bca26f9228340c7d80ff = L.polyline(
+                [[31.4675, 74.2655], [31.5124, 74.3438]],
+                {"bubblingMouseEvents": true, "color": "lightgray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "lightgray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_fb31256c04cda82b22206f5614362112);
+        
+    
+            poly_line_a04e529a3e82bca26f9228340c7d80ff.bindTooltip(
+                `<div>
+                     Emporium_Mall-Liberty_Market: 7 km
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_b0fcaf5f19e46e710c7b8858b0c761d3 = L.polyline(
+                [[31.368, 74.185], [31.4697, 74.4101]],
+                {"bubblingMouseEvents": true, "color": "lightgray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "lightgray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_fb31256c04cda82b22206f5614362112);
+        
+    
+            poly_line_b0fcaf5f19e46e710c7b8858b0c761d3.bindTooltip(
+                `<div>
+                     Bahria_Town-DHA: 12 km
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_2259bda5d47b97fdcab7700d2142fe52 = L.polyline(
+                [[31.368, 74.185], [31.4675, 74.2655]],
+                {"bubblingMouseEvents": true, "color": "lightgray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "lightgray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_fb31256c04cda82b22206f5614362112);
+        
+    
+            poly_line_2259bda5d47b97fdcab7700d2142fe52.bindTooltip(
+                `<div>
+                     Bahria_Town-Emporium_Mall: 8 km
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_f8edb290b778f187ca097a06e1cb1315 = L.circle(
+                [31.5216, 74.4036],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5000, "stroke": true, "weight": 3}
+            ).addTo(map_fb31256c04cda82b22206f5614362112);
+        
+    
+            circle_f8edb290b778f187ca097a06e1cb1315.bindTooltip(
+                `<div>
+                     No-fly zone (5 km)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_17278e0422b6dfa9bd99cb857976929d = L.circle(
+                [31.5826, 74.325],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1500, "stroke": true, "weight": 3}
+            ).addTo(map_fb31256c04cda82b22206f5614362112);
+        
+    
+            circle_17278e0422b6dfa9bd99cb857976929d.bindTooltip(
+                `<div>
+                     Walled City (+20% time)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_dae3ee4b7700ac8b3b1079b7c2c1cb32 = L.marker(
+                [31.5774, 74.33],
+                {
+}
+            ).addTo(map_fb31256c04cda82b22206f5614362112);
+        
+    
+            var icon_021e91a50fd644dc90e43b998eaf980c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_dae3ee4b7700ac8b3b1079b7c2c1cb32.bindTooltip(
+                `<div>
+                     Lahore Station
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_dae3ee4b7700ac8b3b1079b7c2c1cb32.setIcon(icon_021e91a50fd644dc90e43b998eaf980c);
+            
+    
+            var marker_2406ee74dfdbaf8fdc428b7273ba8490 = L.marker(
+                [31.5204, 74.3487],
+                {
+}
+            ).addTo(map_fb31256c04cda82b22206f5614362112);
+        
+    
+            var icon_ce95bac35875c88bf19aa017ac148ccd = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_2406ee74dfdbaf8fdc428b7273ba8490.bindTooltip(
+                `<div>
+                     Gulberg
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_2406ee74dfdbaf8fdc428b7273ba8490.setIcon(icon_ce95bac35875c88bf19aa017ac148ccd);
+            
+    
+            var marker_2be9827fc555033c6a4445662bc3d456 = L.marker(
+                [31.4697, 74.4101],
+                {
+}
+            ).addTo(map_fb31256c04cda82b22206f5614362112);
+        
+    
+            var icon_31d11a2b661a334bf8d744c73ee84eaf = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_2be9827fc555033c6a4445662bc3d456.bindTooltip(
+                `<div>
+                     DHA
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_2be9827fc555033c6a4445662bc3d456.setIcon(icon_31d11a2b661a334bf8d744c73ee84eaf);
+            
+    
+            var marker_5e181b62c191eb7dcf6b2b6170661bc4 = L.marker(
+                [31.579, 74.315],
+                {
+}
+            ).addTo(map_fb31256c04cda82b22206f5614362112);
+        
+    
+            var icon_525950f890820104b2910b64e1aaefcb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_5e181b62c191eb7dcf6b2b6170661bc4.bindTooltip(
+                `<div>
+                     Data Darbar
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_5e181b62c191eb7dcf6b2b6170661bc4.setIcon(icon_525950f890820104b2910b64e1aaefcb);
+            
+    
+            var marker_35fb648ad04e308b49ed0471934ceb00 = L.marker(
+                [31.5216, 74.4036],
+                {
+}
+            ).addTo(map_fb31256c04cda82b22206f5614362112);
+        
+    
+            var icon_6a1cc56e4f136c4a59759d1b388d2c3c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_35fb648ad04e308b49ed0471934ceb00.bindTooltip(
+                `<div>
+                     Allama Iqbal Airport
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_35fb648ad04e308b49ed0471934ceb00.setIcon(icon_6a1cc56e4f136c4a59759d1b388d2c3c);
+            
+    
+            var marker_a5793f46fb7913697838140a9aaea8e7 = L.marker(
+                [31.5124, 74.3438],
+                {
+}
+            ).addTo(map_fb31256c04cda82b22206f5614362112);
+        
+    
+            var icon_7214aa346f43b856382513abcc756973 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_a5793f46fb7913697838140a9aaea8e7.bindTooltip(
+                `<div>
+                     Liberty Market
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_a5793f46fb7913697838140a9aaea8e7.setIcon(icon_7214aa346f43b856382513abcc756973);
+            
+    
+            var marker_23ba4568479769454e67acc2fe88eee3 = L.marker(
+                [31.5882, 74.3103],
+                {
+}
+            ).addTo(map_fb31256c04cda82b22206f5614362112);
+        
+    
+            var icon_bb6181896ce45eb6315c8c4e4696c5a6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_23ba4568479769454e67acc2fe88eee3.bindTooltip(
+                `<div>
+                     Badshahi Mosque
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_23ba4568479769454e67acc2fe88eee3.setIcon(icon_bb6181896ce45eb6315c8c4e4696c5a6);
+            
+    
+            var marker_d033a56b22ef32e569ba70b2e7d805bc = L.marker(
+                [31.5826, 74.325],
+                {
+}
+            ).addTo(map_fb31256c04cda82b22206f5614362112);
+        
+    
+            var icon_f939076a861ba5963719832033f408fb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_d033a56b22ef32e569ba70b2e7d805bc.bindTooltip(
+                `<div>
+                     Walled City
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d033a56b22ef32e569ba70b2e7d805bc.setIcon(icon_f939076a861ba5963719832033f408fb);
+            
+    
+            var marker_9acc1cf692c76e7725c6707f83f31dd2 = L.marker(
+                [31.4675, 74.2655],
+                {
+}
+            ).addTo(map_fb31256c04cda82b22206f5614362112);
+        
+    
+            var icon_ef3e7aa7e7405b12f3cca3fbd5e21854 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_9acc1cf692c76e7725c6707f83f31dd2.bindTooltip(
+                `<div>
+                     Emporium Mall
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_9acc1cf692c76e7725c6707f83f31dd2.setIcon(icon_ef3e7aa7e7405b12f3cca3fbd5e21854);
+            
+    
+            var marker_621a124ee9b97768220ee358f4eb8386 = L.marker(
+                [31.368, 74.185],
+                {
+}
+            ).addTo(map_fb31256c04cda82b22206f5614362112);
+        
+    
+            var icon_ae11d2b7e9b9bcad5bc290ee2d55550e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_621a124ee9b97768220ee358f4eb8386.bindTooltip(
+                `<div>
+                     Bahria Town
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_621a124ee9b97768220ee358f4eb8386.setIcon(icon_ae11d2b7e9b9bcad5bc290ee2d55550e);
+            
+    
+            var poly_line_4d557d134cdee4adefcc82dc8dcf1c9f = L.polyline(
+                [[31.5774, 74.33], [31.5204, 74.3487], [31.5124, 74.3438], [31.4675, 74.2655]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 6}
+            ).addTo(map_fb31256c04cda82b22206f5614362112);
+        
+    
+            poly_line_4d557d134cdee4adefcc82dc8dcf1c9f.bindTooltip(
+                `<div>
+                     SA (dynamic traffic)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var layer_control_553f1259292ee0469037b01284ef3579_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_83109dbb2ceeea608ecddc429642e6cc,
+                },
+                overlays :  {
+                },
+            };
+            let layer_control_553f1259292ee0469037b01284ef3579 = L.control.layers(
+                layer_control_553f1259292ee0469037b01284ef3579_layers.base_layers,
+                layer_control_553f1259292ee0469037b01284ef3579_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": true,
+  "autoZIndex": true,
+}
+            ).addTo(map_fb31256c04cda82b22206f5614362112);
+
+        
+</script>
+</html>
